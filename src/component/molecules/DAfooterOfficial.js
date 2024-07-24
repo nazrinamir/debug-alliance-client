@@ -24,14 +24,14 @@ const footer_item = [
 
 const DAfooterOfficial = ({ align = "left" }) => {
   // Determine the class based on alignment prop
-  const footerClass = align === "center" ? "w-fit mx-auto" : "w-fit";
+  const footerClass = align === "center" ? "w-fit mx-auto" : "w-fit mx-auto md:mx-0";
 
   return (
     <div className="w-full">
       <div className={footerClass}>
         <DAfooter />
       </div>
-      <div className="w-full text-white text-xl font-thin">
+      <div className="w-full text-white md:text-xl text-sm font-thin">
         © 2022 KMY Codesync Production
       </div>
     </div>

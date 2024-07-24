@@ -38,7 +38,7 @@ const DAfooter = () => {
 
         <div className="border border-white" />
 
-        <div className="flex w-full items-center justify-center gap-4 p-4">
+        <div className="flex md:w-full items-center justify-center gap-4 p-4">
           {footer_item.map((item, index) => (
             <FooItem key={index} to={item.to} srcImages={item.srcImage} />
           ))}
