@@ -12,10 +12,10 @@ import DAbtn from "./component/atom/DAbtn";
 
 function App() {
   return (
-    <div className="App ">
+    <div className="App  ">
       <Router>
-        <div className="squada-one-regular  sticky top-0 w-full flex flex-col items-center  bg-transparent z-50 ">
-          <header className=" justify-between w-full p-4 bg-transparent max-md:px-5 md:max-w-[80%] shadow-xl">
+        <div className="squada-one-regular sticky top-0 w-full flex flex-col items-center z-50 ">
+          <header className=" justify-between w-full p-4 bg-transparent max-md:px-5 md:max-w-[80%] ">
             <div className="flex h-full gap-5 max-md:flex-col max-md:gap-0">
               <div className="flex flex-col w-[16%] max-md:ml-0 max-md:w-full">
                 <div className="   flex grow gap-3 justify-center px-2.5 py-px text-2xl font-semibold text-center whitespace-nowrap text-cyan-950 max-md:mt-10">
