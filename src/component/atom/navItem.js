@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const NavItem = ({ to, label }) => {
   return (
-    <div className="flex bg-red-600">
+    <div className="h-full w-full">
       <Link to={to}>
-        <button className="bg-red-500">{label}</button>
+        <button className="">{label}</button>
       </Link>
     </div>
   );

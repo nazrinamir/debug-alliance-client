@@ -2,16 +2,17 @@ import React from 'react';
 import NavItem from '../atom/navItem';
 
 const navitem =[
-    {to:"/contact", label:"Contact Us" },
-    {to:"/Shop", label:"Shop" },
+    {to:"/", label:"Home" },
+    {to:"/Match", label:"News" },
+    {to:"/contact", label:"Contact" },
     {to:"/Squad", label:"Squad" },
-    {to:"/Match", label:"Match" },
+    // {to:"/Shop", label:"Shop" },
 ]
 
 const NavBar = () => {
   return (
-    <nav className='bg-red-500'>
-      <div className='flex flex-row border-2 border-red-500 bg-red-400'>
+    <nav className='h-full'>
+      <div className='flex flex-row gap-x-7 items-center w-full h-full text-lg p-4'>
         {navitem.map((item, index) => (
           <NavItem key={index} to={item.to} label={item.label} />
         ))}
