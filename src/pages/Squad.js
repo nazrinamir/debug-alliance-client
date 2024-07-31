@@ -8,7 +8,9 @@ function Squad() {
         src="debug-images/bg-main.png"
         alt="bgMain"
       />
-      Squad
+      <div>
+        
+      </div>
     </div>
   )
 }
