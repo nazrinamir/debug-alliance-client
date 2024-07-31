@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import NavItem from "../atom/navItem";
 import DAbtn from "../atom/DAbtn";
 import { DrawerIcon, ShopIcon } from "../../styles/icon";
-
+import Offcanvas from "react-bootstrap/Offcanvas";
 
 const navitem = [
   { to: "/", label: "HOME" },
@@ -11,11 +11,11 @@ const navitem = [
   { to: "/Squad", label: "SQUAD" },
   // {to:"/Shop", label:"Shop" },
 ];
-
+let boolDrawer = false;
 const NavBar = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = () => setShow((boolDrawer = !boolDrawer));
 
   return (
     <nav className="h-full">
@@ -31,7 +31,32 @@ const NavBar = () => {
           <button className="md:hidden flex flex-col" onClick={handleShow}>
             <DrawerIcon></DrawerIcon>
           </button>
-          
+        </div>
+        <div className=" z-10">
+          <Offcanvas show={show} onHide={handleClose}>
+            <img
+              className="absolute top-0 bg-cover bg-repeat w-full h-full md:min-h-[115vh] z-[-1]"
+              src="debug-images/bg-main.png"
+              alt="bgMain"
+            />
+            <div className="p-4">
+              <Offcanvas.Header closeButton>
+                <div>
+                  <Offcanvas.Title>
+                    <div className="squada-one-regular text-[#FFD600] text-2xl">DEBUG ALLIANCE</div>
+                  </Offcanvas.Title>
+                </div>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <div className="flex flex-col items-center gap-x-7 squada-one-regular">
+                  {navitem.map((item, index) => (
+                    <NavItem key={index} to={item.to} label={item.label}/>
+                  ))}
+                  <DAbtn to="/shop" label="SHOP" Icon={ShopIcon} />
+                </div>
+              </Offcanvas.Body>
+            </div>
+          </Offcanvas>
         </div>
       </div>
     </nav>
