@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Shop from "./pages/Shop";
 import Squad from "./pages/Squad";
 import Match from "./pages/Match";
+import Admin from "./pages/Administrator/Admin";
 // import { ShopIcon } from "./styles/icon";
 // import DAbtn from "./component/atom/DAbtn";
 
@@ -44,6 +45,7 @@ function App() {
           <Route path="/Shop" exact Component={Shop} />
           <Route path="/Squad" exact Component={Squad} />
           <Route path="/Match" exact Component={Match} />
+          <Route path="/Admin" exact Component={Admin} />
         </Routes>
       </Router>
     </div>
