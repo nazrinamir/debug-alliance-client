@@ -1,5 +1,6 @@
 import React from 'react'
 import CardHolder from '../component/molecules/CardHolder'
+import { data } from '../dataStorage/dataStorage';
 
 function Squad() {
   return (
@@ -17,7 +18,7 @@ function Squad() {
             <img className='md:w-1/2 rounded-2xl ' src='/Resources/squad.jpeg'/>
         </div>
         <div className='md:mx-auto md:w-[80%] w-full pb-2'>
-          <CardHolder>
+          <CardHolder data={data}>
 
           </CardHolder>
         </div>
