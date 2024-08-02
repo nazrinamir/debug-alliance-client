@@ -16,7 +16,7 @@ function Shop() {
         </h1>
         <div className="lg:flex w-[80%]  p-10 items-center justify-center mx-auto">
           <div className='lg:w-3/5 w-full'>
-            <div className='w-3/5 mx-auto'>
+            <div className='w-3/5 mx-auto scale-100 hover:scale-105 transition-transform duration-1000'>
               <img className='rounded-xl hover:shadow-lg' src="/resources/baju.jpeg" alt='DA_HK24'/>
             </div>
           </div>
@@ -25,7 +25,7 @@ function Shop() {
               DEBUG ALLIANCE <br/>HOME KIT 24'
             </div>
             <div className='squada-one-regular text-white font-bold lg:text-[1.5rem] p-4'>
-              Opening purchase at 31 July 2024
+              Opening purchase at 31 July 2024 !
             </div>
             <div className='w-full'>
               <DAbtn to={'https://google.com'} createTab={"ON"} label={'Purchase'} />
