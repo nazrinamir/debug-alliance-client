@@ -14,7 +14,7 @@ const DAbtn02 = ({ location, label }) => {
   };
   return (
     <div>
-      <Link className="text-white" to={toValue}>
+      <Link className="text-white" to={location}>
         <button
           onClick={() => {
             checkLabel();
