@@ -1,6 +1,7 @@
 import React from 'react'
 import CardHolder from '../component/molecules/CardHolder'
 import { data } from '../dataStorage/dataStorage';
+import DAfooterOfficial from '../component/molecules/DAfooterOfficial';
 
 function Squad() {
   return (
@@ -23,6 +24,10 @@ function Squad() {
           </CardHolder>
         </div>
       </div>
+
+      <footer className="mx-auto w-[80%] mt-20">
+        <DAfooterOfficial align="left" />
+      </footer>
     </div>
   )
 }

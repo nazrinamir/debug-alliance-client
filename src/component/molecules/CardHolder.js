@@ -1,7 +1,9 @@
 import React from "react";
 import Card from "../atom/Card";
 
-const CardHolder = ({data}) => {
+const CardHolder = ({data ,state}) => {
+
+  const mode = state === "center" ? "w-fit mx-auto" : "w-fit";
     return (
       <div>
         <div className="grid lg:grid-cols-4 md:grid-cols-3 justify-center items-center mx-auto bg-gray-500 bg-opacity-35 rounded-xl shadow-inner gap-4 p-4">

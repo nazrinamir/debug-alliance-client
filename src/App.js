@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import NavBar from "./component/molecules/navBar";
@@ -8,12 +8,19 @@ import Shop from "./pages/Shop";
 import Squad from "./pages/Squad";
 import Match from "./pages/Match";
 import Admin from "./pages/Administrator/Admin";
+import DAfooterOfficial from "./component/molecules/DAfooterOfficial";
+import Setting from "./pages/Administrator/Setting";
 // import { ShopIcon } from "./styles/icon";
 // import DAbtn from "./component/atom/DAbtn";
 
 function App() {
+  const bottomRef = useRef(null);
+
+  const scrollToBottom = () => {
+    bottomRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
-    <div className="App bg-[#700404] h-full w-full">
+    <div className="App bg-[#700404] h-[100dvh] w-full">
       <Router>
         <div className="squada-one-regular sticky top-0 w-full flex md:flex-col items-center z-50 ">
           <header className=" justify-between w-full p-4 bg-transparent md:px-5 md:max-w-[80%] ">
@@ -32,7 +39,7 @@ function App() {
               </div>
               <div className="flex flex-row w-full uppercase h-full items-center justify-end">
                 {/* Add Your Items of Nav Item */}
-                <NavBar />
+                <NavBar onContactClick={scrollToBottom} />
               </div>
             </div>
           </header>
@@ -46,8 +53,10 @@ function App() {
           <Route path="/Squad" exact Component={Squad} />
           <Route path="/Match" exact Component={Match} />
           <Route path="/Admin" exact Component={Admin} />
+          <Route path="/Setting" exact Component={Setting} />
         </Routes>
       </Router>
+      <div ref={bottomRef}/>
     </div>
   );
 }

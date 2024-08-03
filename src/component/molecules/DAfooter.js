@@ -33,7 +33,7 @@ const DAfooter = () => {
           <div className="p-2">
             <MailIcon />
           </div>
-          <p className="text-2xl">CONTACT US</p>
+          <p className="text-2xl my-auto">CONTACT US</p>
         </div>
 
         <div className="border border-white" />

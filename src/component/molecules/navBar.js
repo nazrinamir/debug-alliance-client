@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import NavItem from "../atom/navItem";
-import DAbtn from "../atom/DAbtn";
-import { DrawerIcon, ShopIcon } from "../../styles/icon";
+import DAbtn from "../atom/DAbtn01";
+import { DrawerIcon, MailIcon, ShopIcon } from "../../styles/icon";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
 const navitem = [
   { to: "/", label: "HOME" },
   { to: "/Match", label: "NEWS" },
-  { to: "/contact", label: "CONTACT" },
+  // { to: "/contact", label: "CONTACT" },
   { to: "/Squad", label: "SQUAD" },
   // {to:"/Shop", label:"Shop" },
 ];
 let boolDrawer = false;
-const NavBar = () => {
+const NavBar = ({ onContactClick }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow((boolDrawer = !boolDrawer));
@@ -25,13 +25,18 @@ const NavBar = () => {
             {navitem.map((item, index) => (
               <NavItem key={index} to={item.to} label={item.label} />
             ))}
+            <button onClick={onContactClick} className="text-xl text-nowrap">
+              CONTACT US
+            </button>
             <DAbtn to="/shop" label="SHOP" Icon={ShopIcon} />
           </div>
 
+          {/* Drawer Mobile */}
           <button className="md:hidden flex flex-col" onClick={handleShow}>
             <DrawerIcon></DrawerIcon>
           </button>
         </div>
+
         <div className=" z-10">
           <Offcanvas show={show} onHide={handleClose}>
             <img
@@ -43,14 +48,16 @@ const NavBar = () => {
               <Offcanvas.Header closeButton>
                 <div>
                   <Offcanvas.Title>
-                    <div className="squada-one-regular text-[#FFD600] text-2xl">DEBUG ALLIANCE</div>
+                    <div className="squada-one-regular text-[#FFD600] text-2xl">
+                      DEBUG ALLIANCE
+                    </div>
                   </Offcanvas.Title>
                 </div>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <div className="flex flex-col items-center gap-x-7 squada-one-regular">
                   {navitem.map((item, index) => (
-                    <NavItem key={index} to={item.to} label={item.label}/>
+                    <NavItem key={index} to={item.to} label={item.label} />
                   ))}
                   <DAbtn to="/shop" label="SHOP" Icon={ShopIcon} />
                 </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import DAbtn from "../component/atom/DAbtn";
+import DAbtn from "../component/atom/DAbtn01";
 import DAfooterOfficial from '../component/molecules/DAfooterOfficial';
 
 function Shop() {
