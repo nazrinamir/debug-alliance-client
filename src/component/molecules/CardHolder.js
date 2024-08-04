@@ -5,7 +5,7 @@ const CardHolder = ({ data, state }) => {
   const mode = state === "center" ? "w-fit mx-auto" : "w-fit";
 
   return (
-    <div className={`p-4 ${mode}`}>
+    <div className={`p-4 ${mode} w-full`}>
       <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 bg-gray-500 p-6 bg-opacity-35 rounded-xl shadow-inner w-full">
         {data.map((item, index) => (
           <Card key={index} src={item.src} name={item.name} desc={item.desc} />

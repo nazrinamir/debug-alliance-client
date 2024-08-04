@@ -65,7 +65,6 @@ const ImageUpload = () => {
             onChange={handleDescriptionChange}
           />
         </div>
-        <button className="px-4 p-1 rounded-lg text-white hover:text-gray-600 bg-[#FFD006] transition transform active:scale-95 " type="submit">Submit</button>
         
       </form>
     </div>

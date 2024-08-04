@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import InputLogin from "../../component/molecules/InputLogin";
 import DAbtn02 from "../../component/atom/DAbtn02";
+import InputLogin from "../../component/molecules/InputLogin";
 
 function Admin() {
   const [username, setUsername] = useState("");
@@ -9,6 +9,12 @@ function Admin() {
   const [error, setError] = useState(null);
 
   const handleLogin = async () => {
+    // Validate input fields
+    if (!username || !password) {
+      setError("Username and password cannot be empty.");
+      return; // Stop execution if fields are empty
+    }
+
     try {
       const response = await axios.post("http://localhost:3001/auth/login", {
         username,
@@ -17,13 +23,13 @@ function Admin() {
 
       // Handle successful login
       console.log("Login successful:", response.data);
-      // For example, store the token in localStorage
       localStorage.setItem("token", response.data.token);
-      // Redirect to another page if needed
-      // window.location.href = "/somepage";
+      // Redirect to the desired location
+      window.location.href = "/Setting"; // Redirect to the desired location
     } catch (error) {
-      // Handle errors
-      setError(error.response?.data?.error || "An error occurred");
+      setError(
+        error.response?.data?.error || "An error occurred during login."
+      );
       console.error("Login error:", error);
     }
   };
@@ -47,7 +53,7 @@ function Admin() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <DAbtn02 location="/Setting" label={"Pergi"} onClick={()=>{handleLogin()}} />
+        <DAbtn02 label={"Pergi"} onClick={handleLogin} />
         {error && <p className="text-red-500 mt-4">{error}</p>}
       </div>
     </div>

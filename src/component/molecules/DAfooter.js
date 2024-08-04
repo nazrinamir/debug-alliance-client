@@ -12,7 +12,7 @@ const footer_item = [
   { name: "Tiktok", to: "", srcImage: "/debug-images/tiktokIcon.png" },
   {
     name: "Whatsapp",
-    to: "https://wa.me/01693950365?text=Hello%20Im%20Interested%20to%20buy%20Your%20Merchandise",
+    to: "https://wa.link/wdo9mw",
     srcImage: "/debug-images/wsIcon.png",
   },
   {

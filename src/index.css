@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.accordion-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  
+  .accordion-content.open {
+    max-height: 500px; /* Adjust this value based on the content */
+    opacity: 1;
+  }
+  
+  .accordion-content.closed {
+    max-height: 0;
+    opacity: 0;
+  }
+      
