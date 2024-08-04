@@ -19,8 +19,8 @@ export const data = [
 ];
 
 export const dataNews = [
-  { src: "/Resources/player/Aqil.png", name: "Aqil Fahruddin" , desc: "Pantang Mundur Kecuali Operasi"},
-  { src: "/Resources/player/ArifFitry.png", name: "Arif Fitry" , desc: "Pantang Mundur Kecuali Operasi"},
-  { src: "/Resources/player/AzamFadzli.png", name: "Azam Fadzli", desc: "Pantang Mundur Kecuali Operasi" },
-  { src: "/Resources/player/farishariri.jpeg", name: "Faris Hariri", desc: "Pantang Mundur Kecuali Operasi" },
+  { src: "/Resources/player/Aqil.png", name: "Aqil Fahruddin" , caption: "Kembali Menyengat"},
+  { src: "/Resources/player/ArifFitry.png", name: "Arif Fitry" , caption: "Ini Kali Kami kasi Rata"},
+  { src: "/Resources/player/AzamFadzli.png", name: "Azam Fadzli", caption: "We Will Come Back Stronger" },
+  { src: "/Resources/player/farishariri.jpeg", name: "Faris Hariri", caption: "Pantang Mundur Kecuali Operasi" },
 ];

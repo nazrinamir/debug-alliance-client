@@ -1,27 +1,23 @@
-import React from 'react'
-import CardHolder from '../component/molecules/CardHolder'
-import { data } from '../dataStorage/dataStorage';
-import DAfooterOfficial from '../component/molecules/DAfooterOfficial';
+import React from "react";
+import CardHolder from "../component/molecules/CardHolder";
+import { data } from "../dataStorage/dataStorage";
+import DAfooterOfficial from "../component/molecules/DAfooterOfficial";
 
 function Squad() {
   return (
-    <div className='bg-[#700404]'>
+    <div className="bg-[#700404]">
       {/* <img
         className="absolute top-0 bg-cover bg-repeat w-full h-[122vh] z-[-1]"
         src="debug-images/bg-main.png"
         alt="bgMain"
       /> */}
       <div>
-        <h1 className='squada-one-regular text-white'>
-          Debug Alliance Squad
-        </h1>
+        <h1 className="squada-one-regular text-white">Debug Alliance Squad</h1>
         <div className="flex items-center justify-center mb-10">
-            <img className='md:w-1/2 rounded-2xl ' src='/Resources/squad.jpeg'/>
+          <img className="md:w-1/2 rounded-2xl " src="/Resources/squad.jpeg" />
         </div>
-        <div className='md:mx-auto md:w-[80%] w-full pb-2'>
-          <CardHolder data={data}>
-
-          </CardHolder>
+        <div className="md:mx-auto md:w-[80%] w-full pb-2 ">
+          <CardHolder data={data}/>
         </div>
       </div>
 
@@ -29,7 +25,7 @@ function Squad() {
         <DAfooterOfficial align="left" />
       </footer>
     </div>
-  )
+  );
 }
 
-export default Squad
+export default Squad;
