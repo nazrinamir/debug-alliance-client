@@ -20,10 +20,10 @@ function App() {
     bottomRef.current.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="App bg-[#700404] h-[100dvh] w-full">
+    <div className="App bg-[#700404] bg-cover min-h-screen flex flex-col  ">
       <Router>
         <div className="squada-one-regular sticky top-0 w-full flex md:flex-col items-center z-50 ">
-          <header className=" justify-between w-full p-4 bg-transparent md:px-5 md:max-w-[80%] ">
+          <header className=" justify-between w-full p-2 bg-[#700404] bg-opacity-50 backdrop-blur-md md:px-5 md:max-w-[80%] ">
             <div className="flex h-full gap-5 md:flex-row md:gap-0">
               <div className="flex flex-row md:flex-row md:ml-0 w-fit md:w-fit">
                 <div className="flex gap-3 md:justify-center  text-2xl font-semibold text-center whitespace-nowrap text-cyan-950 my-auto">

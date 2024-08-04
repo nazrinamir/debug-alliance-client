@@ -18,9 +18,9 @@ const NavBar = ({ onContactClick }) => {
   const handleShow = () => setShow((boolDrawer = !boolDrawer));
 
   return (
-    <nav className="h-full">
+    <nav className="h-full ">
       <div className="flex">
-        <div className="flex flex-row gap-x-7 items-center w-full h-full text-lg p-4 upppercase text-white">
+        <div className="flex flex-row gap-x-7 items-center w-full h-full text-lg p-2 upppercase text-white">
           <div className="md:flex hidden items-center gap-x-7">
             {navitem.map((item, index) => (
               <NavItem key={index} to={item.to} label={item.label} />
