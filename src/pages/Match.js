@@ -6,7 +6,7 @@ import Carousel from "../component/molecules/Carousel";
 
 function Match() {
   return (
-    <div className="bg-[#700404] w-[80%] mx-auto">
+    <div className=" w-[80%] mx-auto">
       {/* <img
         className="absolute top-0 bg-cover bg-repeat w-full h-[122vh] z-[-1]"
         src="debug-images/bg-main.png"

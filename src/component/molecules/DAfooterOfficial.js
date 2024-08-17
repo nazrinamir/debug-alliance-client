@@ -31,7 +31,7 @@ const DAfooterOfficial = ({ align = "left" }) => {
       <div className={footerClass}>
         <DAfooter />
       </div>
-      <div className="w-full text-white md:text-xl text-sm font-thin">
+      <div className="w-full text-white text-center md:text-xl text-sm font-thin">
         © 2022 KMY Codesync Production
       </div>
     </div>

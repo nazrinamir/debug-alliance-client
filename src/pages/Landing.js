@@ -10,7 +10,7 @@ function Landing() {
         src="debug-images/bg-main.png"
         alt="bgMain"
       /> */}
-      <div className="md:p-[10rem] py-10 bg-cover bg-no-repeat bg-[url('https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/georgiadogs.com/images/2023/8/10/23FAC_Sanford_Stadium_19.jpg')] ">
+      <div className=" py-10 object-cover ">
         <History />
       </div>
     </div>
