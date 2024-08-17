@@ -18,9 +18,6 @@ function Match() {
           <Carousel images={dataNews} />
         </div>
       </div>
-      <footer className=" mt-20">
-        <DAfooterOfficial align="left" />
-      </footer>
     </div>
   );
 }

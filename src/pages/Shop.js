@@ -8,11 +8,11 @@ const targetDate = "2024-08-08T00:00:00Z";
 function Shop() { 
   return (
     <div className="">
-      <img
+      {/* <img
         className="absolute top-0 bg-cover bg-repeat w-full h-[122vh] z-[-1]"
         src="debug-images/bg-main.png"
         alt="bgMain"
-      />
+      /> */}
       <div className="bg-yellow-500 bg-cover bg-no-repeat bg-opacity-25">
         <h1 className="squada-one-regular text-white font-bold underline pt-10 ">
           DEBUG ALLIANCE MERCHANDISE
@@ -47,9 +47,6 @@ function Shop() {
           </div>
         </div>
       </div>
-      <footer className="mx-auto w-[80%] mt-20">
-        <DAfooterOfficial align="left" />
-      </footer>
     </div>
   );
 }

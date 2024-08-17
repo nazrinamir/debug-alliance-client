@@ -20,10 +20,6 @@ function Squad() {
           <CardHolder data={data}/>
         </div>
       </div>
-
-      <footer className="mx-auto w-[80%] mt-20">
-        <DAfooterOfficial align="left" />
-      </footer>
     </div>
   );
 }

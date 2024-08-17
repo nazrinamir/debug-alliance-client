@@ -12,18 +12,22 @@ import DAfooterOfficial from "./component/molecules/DAfooterOfficial";
 import Setting from "./pages/Administrator/Setting";
 
 function App() {
-  const bottomRef = useRef(null);
   const [showNavbar, setShowNavbar] = useState(true);
-
+  const bottomRef = useRef(null);
   useEffect(() => {
     const pathname = window.location.pathname;
     if (pathname === "/Admin" || pathname === "/Setting") {
       setShowNavbar(false);
-      console.log("%cYou are Trespassing! If you are not an Admin, Please Leave.", "color: red; font-weight: bold; font-size: 16px;");
-
+      console.log(
+        "%cYou are Trespassing! If you are not an Admin, Please Leave.",
+        "color: red; font-weight: bold; font-size: 16px;"
+      );
     } else {
       setShowNavbar(true);
-      console.log("%cUser Mode Captured", "color: green; font-weight: bold; font-size: 16px;");
+      console.log(
+        "%cUser Mode Captured",
+        "color: green; font-weight: bold; font-size: 16px;"
+      );
     }
   }, [window.location.pathname]);
 
@@ -32,7 +36,7 @@ function App() {
   };
 
   return (
-    <div className="App bg-[#700404] bg-cover min-h-screen flex flex-col">
+    <div className="relative App bg-[#700404] bg-cover min-h-screen flex flex-col">
       <Router>
         {showNavbar && (
           <div className="squada-one-regular sticky top-0 w-full flex md:flex-col items-center z-50">
@@ -57,11 +61,15 @@ function App() {
             </header>
           </div>
         )}
+        <footer className="absolute bottom-0 right-0 left-0">
+        <DAfooterOfficial align="left" />
+      </footer>
         {!showNavbar && (
           <h4 className="squada-one-regular text-white mt-10">
-            This page is only created for Admin.<br/> If you are right here by accident or intentionally please inform the bug and leave this page immediately. 
+            This page is only created for Admin.
+            <br /> If you are right here by accident or intentionally please
+            inform the bug and leave this page immediately.
           </h4>
-
         )}
 
         <Routes>
@@ -74,6 +82,7 @@ function App() {
           <Route path="/Setting" exact element={<Setting />} />
         </Routes>
       </Router>
+      
       <div ref={bottomRef} />
     </div>
   );
