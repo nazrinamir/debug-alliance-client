@@ -35,9 +35,11 @@ function Admin() {
   };
 
   return (
-    <div className="mt-10 bg-[#FF7777] bg-opacity-35 p-6 w-[50%] mx-auto squada-one-regular text-white rounded-xl shadow-2xl">
-      <h1>Welcome to Admin Page</h1>
-      <h4>Please Login to Introduce Yourself</h4>
+    <div className="mt-10 bg-[#ffd006] backdrop-blur-sm bg-opacity-20 p-6 w-[50%] mx-auto squada-one-regular text-white rounded-xl shadow-2xl">
+      <div className="text-center">
+        <h1>Welcome to Admin Page</h1>
+        <h4>Please Login to Introduce Yourself</h4>
+      </div>
       <div className="h-full w-full mx-auto my-10 md:text-xl">
         <div className="flex flex-col p-2 w-[60%] mx-auto gap-y-4">
           <InputLogin
@@ -53,8 +55,10 @@ function Admin() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <DAbtn02 label={"Pergi"} onClick={handleLogin} />
-        {error && <p className="text-red-500 mt-4">{error}</p>}
+        <div className="flex justify-center items-center">
+          <DAbtn02 label={"Pergi"} onClick={handleLogin} />
+        </div>
+        {error && <p className="text-red-500 text-center mt-4">{error}</p>}
       </div>
     </div>
   );

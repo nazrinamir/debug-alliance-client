@@ -5,7 +5,7 @@ const InputAdmin = ({ type, value, onChange }) => {
   return (
     <div className="w-full">
       <input
-        className="text-black rounded-lg p-2 w-3/4"
+        className="text-black rounded-lg p-2 w-full"
         type={inputType}
         value={value}
         onChange={onChange}

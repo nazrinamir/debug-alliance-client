@@ -1,16 +1,11 @@
 import React from "react";
 import History from "../component/atom/History";
-import DAfooterOfficial from "../component/molecules/DAfooterOfficial";
+import '../App.css'
 
 function Landing() {
   return (
     <div className="h-full">
-      {/* <img
-        className="absolute top-0 bg-cover bg-repeat-y w-full h-full md:min-h-[121vh] z-[-1]"
-        src="debug-images/bg-main.png"
-        alt="bgMain"
-      /> */}
-      <div className=" py-10 object-cover ">
+      <div className=" py-10 h-screen flex flex-col items-center justify-center bg-stadium">
         <History />
       </div>
     </div>

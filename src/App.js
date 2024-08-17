@@ -39,30 +39,14 @@ function App() {
     <div className="relative App-header bg-cover min-h-screen flex flex-col">
       <Router>
         {showNavbar && (
-          <div className="squada-one-regular  sticky top-0 w-full flex md:flex-col items-center z-50">
-            <header className="justify-between w-full p-2 backdrop-blur-md md:px-5 md:w-full">
-              <div className="flex h-full md:max-w-[80%] mx-auto gap-5 md:flex-row md:gap-0">
-                <div className="flex flex-row md:flex-row md:ml-0 w-fit md:w-fit">
-                  <div className="flex gap-3 md:justify-center text-2xl font-semibold text-center whitespace-nowrap text-cyan-950 my-auto">
-                    <Link to="/">
-                      <img
-                        loading="lazy"
-                        src="/Ellipse 2.png"
-                        alt=""
-                        className="shrink-0 aspect-square w-[70px]"
-                      />
-                    </Link>
-                  </div>
-                </div>
-                <div className="flex flex-row w-full uppercase h-full items-center justify-end">
-                  <NavBar onContactClick={scrollToBottom} />
-                </div>
-              </div>
-            </header>
-          </div>
+          <NavBar
+            onContactClick={() => {
+              scrollToBottom();
+            }}
+          />
         )}
         {!showNavbar && (
-          <h4 className="squada-one-regular text-white mt-10">
+          <h4 className="squada-one-regular text-white text-md text-center mt-10">
             This page is only created for Admin.
             <br /> If you are right here by accident or intentionally please
             inform the bug and leave this page immediately.
@@ -78,9 +62,11 @@ function App() {
           <Route path="/Admin" exact element={<Admin />} />
           <Route path="/Setting" exact element={<Setting />} />
         </Routes>
-        <div className="">
-          <DAfooterOfficial align="left" />
-        </div>
+        {showNavbar && (
+          <div className="">
+            <DAfooterOfficial align="left" />
+          </div>
+        )}
       </Router>
 
       <div ref={bottomRef} />

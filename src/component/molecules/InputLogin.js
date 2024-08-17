@@ -4,7 +4,7 @@ import InputAdmin from "../atom/InputAdmin";
 
 const InputLogin = ({ type, label, value, onChange }) => {
   return (
-    <div>
+    <div className="w-full">
       <div className="flex flex-col gap-y-2">
         <LabelAdmin text={label} />
         <InputAdmin type={type} value={value} onChange={onChange} />

@@ -11,10 +11,10 @@ const DAbtn = ({ to, label, Icon, createTab, dueTime }) => {
   const isDisabled = now > dueDate;
 
   return (
-    <div className="">
+    <div className="w-1/3 md:w-full">
       <Link className="no-underline" to={to} target={createTab === "ON" ? "_blank" : ""}>
         <button
-          className={`flex bg-[#FFD600] squada-one-regular rounded-2xl p-2 items-center text-center text-[#6A0606] ring-2 hover:ring-inset w-full ${
+          className={`flex bg-gradient-to-b from-[#ffe887] via-[#ffd006] to-[#b36c00] squada-one-regular rounded-2xl p-2 items-center text-center text-[#6A0606] ring-2 hover:ring-inset w-full ${
             isDisabled ? "opacity-50 cursor-not-allowed" : ""
           }`}
           disabled={isDisabled}
