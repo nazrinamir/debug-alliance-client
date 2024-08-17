@@ -5,10 +5,10 @@ const History = () => {
   return (
     <div className="squada-one-regular">
       <div className="text-2xl flex flex-col h-full items-center justify-center ">
-        <div className=" text-[#FFD600] text-[2rem] text-left md:w-[60%] w-[80%] mb-8">
+        <div className=" text-[#FFD600] text-[4rem] text-left md:w-[60%] w-[80%] mb-8">
           DEBUG ALLIANCE FC
         </div>
-        <div className="text-white text-sm md:text-lg md:w-[60%] w-[80%] text-justify flex flex-col gap-y-6">
+        <div className="text-white text-sm md:text-2xl md:w-[60%] w-[80%] text-justify flex flex-col gap-y-6">
           <div>
             Debug Alliance FC is a football club that was established in 2023.
             welcoming all enthusiasts who are passionate about football to join
