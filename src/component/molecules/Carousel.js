@@ -24,8 +24,8 @@ const Carousel = ({ images, autoScrollInterval = 4000 }) => {
   };
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto squada-one-regular text-xl">
-      <div className="overflow-hidden relative h-64">
+    <div className="relative w-full squada-one-regular text-xl">
+      <div className="overflow-hidden relative h-[50dvh]">
         {images.map((image, index) => (
           <div
             key={index}
@@ -57,6 +57,8 @@ const Carousel = ({ images, autoScrollInterval = 4000 }) => {
       >
         &#9654;
       </button>
+
+      
     </div>
   );
 };

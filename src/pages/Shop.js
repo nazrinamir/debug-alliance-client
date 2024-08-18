@@ -14,7 +14,7 @@ function Shop() {
         alt="bgMain"
       /> */}
       <div className="bg-yellow-500 bg-cover bg-no-repeat bg-opacity-25">
-        <h1 className="squada-one-regular text-white font-bold underline pt-10 ">
+        <h1 className="squada-one-regular text-white font-bold underline pt-10 text-center">
           DEBUG ALLIANCE MERCHANDISE
         </h1>
         <div className="lg:flex w-[80%]  p-10 items-center justify-center mx-auto">

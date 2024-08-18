@@ -27,6 +27,7 @@
 }
 
 .bg-stadium {
+  position: relative;
   background-image: url("../public/Resources/stadium background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;

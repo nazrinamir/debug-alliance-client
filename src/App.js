@@ -12,6 +12,7 @@ import DAfooterOfficial from "./component/molecules/DAfooterOfficial";
 import Setting from "./pages/Administrator/Setting";
 
 function App() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
   const bottomRef = useRef(null);
   useEffect(() => {
@@ -42,6 +43,7 @@ function App() {
           <NavBar
             onContactClick={() => {
               scrollToBottom();
+              setIsDrawerOpen(false);
             }}
           />
         )}
