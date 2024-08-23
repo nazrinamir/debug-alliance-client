@@ -1,5 +1,4 @@
 import React from "react";
-import DAfooterOfficial from "../component/molecules/DAfooterOfficial";
 import CardHolder from "../component/molecules/CardHolder";
 import { dataNews } from "../dataStorage/dataStorage";
 import Carousel from "../component/molecules/Carousel";

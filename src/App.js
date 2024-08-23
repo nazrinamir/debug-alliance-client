@@ -65,8 +65,8 @@ function App() {
           <Route path="/Setting" exact element={<Setting />} />
         </Routes>
         {showNavbar && (
-          <div className="">
-            <DAfooterOfficial align="left" />
+          <div className="mt-8">
+            <DAfooterOfficial align="center" />
           </div>
         )}
       </Router>

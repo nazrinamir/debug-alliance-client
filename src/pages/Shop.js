@@ -1,9 +1,8 @@
 import React from "react";
 import DAbtn from "../component/atom/DAbtn01";
-import DAfooterOfficial from "../component/molecules/DAfooterOfficial";
 import CountdownTimer from "../component/atom/CountdownTimer";
 
-const targetDate = "2024-08-08T00:00:00Z";
+const targetDate = "2024-19-08T00:00:00Z";
 
 function Shop() { 
   return (
