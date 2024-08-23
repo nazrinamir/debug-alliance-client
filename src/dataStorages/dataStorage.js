@@ -95,22 +95,22 @@ export const data = [
 
 export const dataNews = [
   {
-    src: "/Resources/player/Aqil.png",
+    src: "/Resources/player-w-bg/Aqil.png",
     name: "Aqil Fahruddin",
     caption: "Kembali Menyengat",
   },
   {
-    src: "/Resources/player/ArifFitry.png",
+    src: "/Resources/player-w-bg/ArifFitry.png",
     name: "Arif Fitry",
     caption: "Ini Kali Kami kasi Rata",
   },
   {
-    src: "/Resources/player/AzamFadzli.png",
+    src: "/Resources/player-w-bg/AzamFadzli.png",
     name: "Azam Fadzli",
     caption: "We Will Come Back Stronger",
   },
   {
-    src: "/Resources/player/farishariri.jpeg",
+    src: "/Resources/player-w-bg/farishariri.jpeg",
     name: "Faris Hariri",
     caption: "Pantang Mundur Kecuali Operasi",
   },
