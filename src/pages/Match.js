@@ -1,6 +1,6 @@
 import React from "react";
 import CardHolder from "../component/molecules/CardHolder";
-import { dataNews } from "../dataStorage/dataStorage";
+import { dataNews } from "../dataStorages/dataStorage";
 import Carousel from "../component/molecules/Carousel";
 
 function Match() {

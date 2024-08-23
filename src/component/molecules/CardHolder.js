@@ -6,9 +6,15 @@ const CardHolder = ({ data, state }) => {
 
   return (
     <div className={`p-1 ${mode} w-full`}>
-      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 rounded-xl shadow-inner w-full">
+      <div className="flex flex-wrap gap-6 items-center justify-center rounded-xl shadow-inner w-full">
         {data.map((item, index) => (
-          <Card key={index} src={item.src} name={item.name} desc={item.desc} />
+          <Card 
+            key={index} 
+            src={item.src || "/default-image.png"} // Provide a default image if src is not available
+            name={item.name || "Unknown"} // Provide a default name if name is not available
+            desc={item.desc || "No description"} // Provide a default description if desc is not available
+            pos={item.pos ||"UD" } // UD is stands for undefined
+          />
         ))}
       </div>
     </div>

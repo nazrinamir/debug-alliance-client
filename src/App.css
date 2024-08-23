@@ -36,6 +36,16 @@
   padding: 20px;
 }
 
+.bg-player {
+  
+  /* background-image: url("https://images6.alphacoders.com/627/thumb-1920-627881.jpg"); */ 
+  /* background-image: url("https://images7.alphacoders.com/423/thumb-1920-423137.jpg"); */ 
+  background-image: url("https://images5.alphacoders.com/646/thumb-1920-646221.jpg");  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
