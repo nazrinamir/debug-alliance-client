@@ -37,7 +37,7 @@ function Shop() {
             <CountdownTimer targetDate={targetDate} />
             <div className="w-full">
               <DAbtn
-                to={"https://google.com"}
+                to={"https://forms.gle/y4RbpJTYfYWkDmA2A"}
                 dueTime={targetDate} // ISO 8601 format (UTC time)
                 createTab={"ON"}
                 label={"Purchase"}
